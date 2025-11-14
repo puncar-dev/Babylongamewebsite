@@ -58,9 +58,12 @@ export function Hero() {
           {/* Play Game Button */}
           <div className="pt-8">
             <a
-              href="https://babylon.market"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/waitlist"
+              onClick={(e) => { 
+                e.preventDefault(); 
+                window.history.pushState({}, '', '/waitlist');
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }}
             >
               <Button 
                 size="lg"

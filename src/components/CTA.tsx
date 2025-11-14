@@ -17,7 +17,14 @@ export function CTA() {
                 size="lg" 
                 className="gap-2 bg-blue-500 hover:bg-blue-600 text-white border-2 border-blue-400 h-auto py-6 flex-col shadow-lg shadow-blue-500/30 rounded-none"
               >
-                <a href="https://babylon.market" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/waitlist" 
+                  onClick={(e) => { 
+                    e.preventDefault(); 
+                    window.history.pushState({}, '', '/waitlist');
+                    window.dispatchEvent(new PopStateEvent('popstate'));
+                  }}
+                >
                   <span className="text-lg">Play Game</span>
                   <span className="text-xs text-blue-200">Start competing now</span>
                 </a>

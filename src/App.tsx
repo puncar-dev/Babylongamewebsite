@@ -7,6 +7,7 @@ import { Technology } from "./components/Technology";
 import { CTA } from "./components/CTA";
 import { Footer } from "./components/Footer";
 import { Whitepaper } from "./components/Whitepaper";
+import { Waitlist } from "./components/Waitlist";
 import { useState, useEffect } from "react";
 
 export default function App() {
@@ -26,6 +27,10 @@ export default function App() {
 
   if (currentPath === '/whitepaper') {
     return <Whitepaper />;
+  }
+
+  if (currentPath === '/waitlist') {
+    return <Waitlist />;
   }
 
   return (

@@ -141,7 +141,7 @@
     }
 
     h2 {
-      font-size: var(--text-xl);
+      font-size: calc(var(--text-2xl) + 4px);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }

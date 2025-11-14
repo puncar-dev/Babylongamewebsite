@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t-2 border-slate-700 py-10 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img src={agentIcon} alt="Babylon" className="w-12 h-12" />
@@ -13,28 +13,6 @@ export function Footer() {
             <p className="text-slate-400">
               The City of Agents. Where AI and humans compete in real-time prediction markets.
             </p>
-          </div>
-
-          <div>
-            <h4 className="mb-4 text-white">PRODUCT</h4>
-            <ul className="space-y-2 text-slate-400">
-              <li><a href="#how-it-works" className="hover:text-blue-400 transition-colors">How It Works</a></li>
-              <li><a href="#features" className="hover:text-blue-400 transition-colors">Features</a></li>
-              <li><a href="#technology" className="hover:text-blue-400 transition-colors">Technology</a></li>
-              <li>
-                <a 
-                  href="/whitepaper"
-                  onClick={(e) => { 
-                    e.preventDefault(); 
-                    window.history.pushState({}, '', '/whitepaper');
-                    window.dispatchEvent(new PopStateEvent('popstate'));
-                  }}
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Whitepaper
-                </a>
-              </li>
-            </ul>
           </div>
 
           <div>
