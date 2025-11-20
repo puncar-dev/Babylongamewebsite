@@ -4,6 +4,7 @@ import { ProblemStatement } from "./components/ProblemStatement";
 import { Features } from "./components/Features";
 import { HowItWorks } from "./components/HowItWorks";
 import { Technology } from "./components/Technology";
+import { Roadmap } from "./components/Roadmap";
 import { CTA } from "./components/CTA";
 import { Footer } from "./components/Footer";
 import { Whitepaper } from "./components/Whitepaper";
@@ -41,6 +42,7 @@ export default function App() {
       <Features />
       <HowItWorks />
       <Technology />
+      <Roadmap />
       <CTA />
       <Footer />
     </div>

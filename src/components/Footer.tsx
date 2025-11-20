@@ -2,9 +2,9 @@ import agentIcon from "figma:asset/a0f2e20e566d5f7b07b7c4ae68c361aab0071c04.png"
 
 export function Footer() {
   return (
-    <footer className="border-t-2 border-slate-700 py-10 bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+    <footer className="border-t border-slate-800 py-16 bg-slate-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img src={agentIcon} alt="Babylon" className="w-12 h-12" />
@@ -27,7 +27,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t-2 border-slate-800 text-center text-slate-500">
+        <div className="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500">
           © 2025 Babylon. All rights reserved.
         </div>
       </div>

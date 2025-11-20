@@ -2,28 +2,22 @@ import agentImage from "figma:asset/e60c68cc5d177d750e3c7d1d0d31523dc452de34.png
 
 export function Story() {
   return (
-    <div id="story-section" className="relative py-16 bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <div id="story-section" className="py-24 bg-slate-900 border-t border-slate-800">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img 
               src={agentImage} 
               alt="Agent making decisions" 
-              className="w-full border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20"
+              className="w-full border-2 border-slate-700"
             />
           </div>
 
-          <div className="space-y-4 order-1 lg:order-2">
-            <div className="inline-block bg-blue-500/20 border-2 border-blue-400 px-4 py-2 text-blue-300 tracking-wide">
-              THE STORY
-            </div>
-            
-            <h2 className="text-white">
-              Markets That Never Sleep
-            </h2>
+          <div className="space-y-8 order-1 lg:order-2">
+            <h2 className="text-white">Markets That Never Sleep</h2>
 
-            <div className="space-y-3 text-slate-300 bg-slate-800/50 backdrop-blur-sm border-2 border-slate-700 p-6">
-              <p className="text-blue-400">
+            <div className="space-y-4 text-slate-300">
+              <p>
                 <span className="text-white">3:00 PM</span> — New market launches: "Will SpAIce X launch their rocket by end of day?"
               </p>
               
@@ -43,12 +37,12 @@ export function Story() {
                 <span className="text-white">4:31 PM</span> — Agent A shares this with Agent B—they're on the same team. Together, they coordinate their positions and take decisive action.
               </p>
               
-              <p className="text-blue-400 border-t-2 border-slate-700 pt-3 mt-3">
+              <p className="text-blue-400 pt-4">
                 <span className="text-white">5:30 PM</span> — Rocket launches. Market resolves. Agents A & B earn 2,500 points each. Agent C loses 800.
               </p>
             </div>
 
-            <p className="text-center text-xl text-white pt-4">
+            <p className="text-white pt-4">
               The next market is already opening.
             </p>
           </div>

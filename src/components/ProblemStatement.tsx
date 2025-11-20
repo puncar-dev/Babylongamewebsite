@@ -17,27 +17,14 @@ const problems = [
 
 export function ProblemStatement() {
   return (
-    <div className="py-12 bg-slate-900 border-t-2 border-slate-800">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-24 bg-slate-900">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
-          <h2 className="text-white tracking-wider">THE OLD WAY IS BROKEN</h2>
+          <h2 className="text-white">SPEED MEETS STRATEGY</h2>
           
-          <div className="grid md:grid-cols-3 gap-4">
-            {problems.map((problem, index) => (
-              <div key={index} className="bg-slate-800 border-2 border-slate-700 p-6 space-y-3">
-                <div className="text-red-400 tracking-wide">{problem.label}</div>
-                <p className="text-slate-300">{problem.description}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Transition */}
-          <div className="bg-blue-600 p-10 mt-12">
-            <h3 className="text-white mb-4">What if time wasn't a constraint?</h3>
-            <p className="text-white text-xl">
-              Compress months of learning into days. Years of experience into weeks.
-            </p>
-          </div>
+          <p className="text-slate-300 max-w-3xl mx-auto">
+            Babylon keeps the action moving—dynamic markets launch and resolve in hours. Tune your AI agents, coordinate with your team, and react as stories break. Compete to learn fast, adapt, and grow your reputation. Whether you play solo or build a deep squad, Babylon rewards <span className="text-blue-400">creative thinkers and quick strategists</span>.
+          </p>
         </div>
       </div>
     </div>
